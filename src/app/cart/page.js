@@ -183,9 +183,16 @@ const Page = () => {
             </div>
           ) : (
             <div className="h-screen w-screen flex flex-col items-center gap-y-9 justify-center">
-              <img src={logo?.src} alt={logo?.src} />
+              <Image
+                src={logo?.src}
+                alt={logo?.src}
+                height={100}
+                width={100}
+                property
+                className="md:h-1/2 md:w-1/2 w-full h-full "
+              />
               <h1
-                className=" text-[20px] capitalize text-gray-800 "
+                className=" text-[20px] capitalize text-gray-800 text-center"
                 style={{ fontStyle: "italic", letterSpacing: "10px" }}
               >
                 Empty Page Please Add pizza to your cart
