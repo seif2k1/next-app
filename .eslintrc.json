@@ -1,18 +1,3 @@
 {
-  "extends": ["next", "plugin:@next/next/recommended", "eslint:recommended"],
-  "plugins": [
-    // ...
-    "react-hooks"
-  ],
-  "rules": {
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": [
-      "warn",
-      {
-        "additionalHooks": "(useMyCustomHook|useMyOtherCustomHook)"
-      }
-    ],
-    "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
-  }
+  "extends": "next/core-web-vitals"
 }
